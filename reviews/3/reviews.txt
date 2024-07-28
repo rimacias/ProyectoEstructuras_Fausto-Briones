@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+lacrackpro911;No me gustó la tematica del videojuego, en mi opinión, muy aburrido;1;2019
+AVGlatina3;Es una revolución gráfica de la nueva era, una carta de amor a la industria;5;2019

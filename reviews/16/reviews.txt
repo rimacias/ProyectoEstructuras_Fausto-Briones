@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+fabrione;De los mejores shooters que he jugado, sobre todo el modo de pruebas de Osiris, que entrega una verdadera competitividad;5;2021
+Zekken_001;Arreglen este juego por favor!!! como puede ser posible que en 3 partidas seguidas de crisol me encuentre a los mismos hackers;2;2019

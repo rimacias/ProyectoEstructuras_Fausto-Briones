@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+termo_de_agua;Tanto hype por nada, es un GTA con skins.;1;2020
+albedo_God;El tinte futurista está brutal, gran diseño, aunque las misiones son mejorables;4;2021

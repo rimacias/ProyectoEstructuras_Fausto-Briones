@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+iTzNiiiCoX;El modo historia online es un asco, los servidores se caen a cada rato y está plagado de hackers.;1;2019
+nr20022007;Me gustó mucho la mecánica del juego y el nivel de las animaciones;4;2021

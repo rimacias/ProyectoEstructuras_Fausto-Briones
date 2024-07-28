@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+fabrione;Lo compré en oferta y aún así no vale la pena, $29.99 ¡es un robo!;1;2022
+Zekken_001;Me hace mucha gracia, pero no lo compraría al precio completo;3;2022

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="root" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectoeddprimerparcial.VentanaExplorarController">
+   <content>
+      <VBox fx:id="vboxPrincipal" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #121212;">
+         <children>
+            <HBox fx:id="buttonHbox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1280.0">
+               <children>
+                  <Button fx:id="backButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #121212;" text="&lt;" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="botonCatalogo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cargarCatalogo" style="-fx-background-color: #121212;" text="Catálogo" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="botonExplorar" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cargarExplorar" style="-fx-background-color: #121212;" text="Explorar" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="textUsuario" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox fx:id="hboxModo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="70.0" style="-fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 5;">
+                     <children>
+                        <Button fx:id="botonLuz" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setLight" prefHeight="35.0" prefWidth="35.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="botonNoche" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setNight" prefHeight="35.0" prefWidth="35.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox fx:id="hboxModo1" alignment="CENTER" prefHeight="35.0" prefWidth="35.0">
+                     <children>
+                        <Button fx:id="botonSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#desloggear" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: red; -fx-background-radius: 24; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="130.0" top="3.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="1280.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="barra_busqueda" focusTraversable="false" promptText="Ingrese el título">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="barra_busquedaAnio" focusTraversable="false" promptText="Ingrese el año">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnBuscar" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #242d69;" text="Buscar" textFill="WHITE" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="1280.0">
+               <children>
+                  <Label fx:id="lblResultados" prefHeight="56.0" prefWidth="253.0" text="RESULTADOS" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Verdana Bold" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" prefHeight="300.0" prefWidth="1280.0">
+               <children>
+                  <VBox fx:id="btnAvanzar" alignment="CENTER" maxHeight="-Infinity" prefHeight="300.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnAnteriores" mnemonicParsing="false" text="&lt;" />
+                     </children>
+                  </VBox>
+                  <HBox fx:id="hboxJuegos" alignment="CENTER" maxHeight="-Infinity" prefHeight="300.0" prefWidth="1060.0" spacing="25.0" />
+                  <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="300.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnSiguientes" mnemonicParsing="false" text="&gt;" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></VBox>
+   </content>
+</ScrollPane>

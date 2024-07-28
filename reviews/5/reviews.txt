@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+termo_de_agua;Tiene unos pesimos servidores lo cual ocasiona constantes errores de conexion que luego son penalizados con tiempo de no poder jugar, todo esto hace que no se pueda disfrutar.;2;2020
+albedo_God;Un estilo de juego distinto de lo que habia probado, pero no me termina de convencer;3;2020

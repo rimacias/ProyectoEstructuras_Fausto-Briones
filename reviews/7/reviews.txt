@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+JosFer;El mejor RPG del año, es un must en la biblioteca de todo buen gamer.;5;2022
+maxlakota;Tiene gráficos decentes, pero la jugabilidad es pésima y la historia es trillada;2;2022

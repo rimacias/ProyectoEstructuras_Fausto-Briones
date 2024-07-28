@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+JosFer;Este juego me dió muchas horas de diversión con mis amigos durante la pandemia, muy recomendado.;5;2020
+maxlakota;Muy sobrevalorado en mi opinión. Existen juegos multiplayer mucho mejores;1;2019

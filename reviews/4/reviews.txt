@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+fabrione;Un juego muy infantil para lo que estoy acostumbrado,pero aun asi,divertido.;3;2021
+Zekken_001;Una oda a los juegos de tipo multiplataformas;4;2022

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="mainScroll" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectoeddprimerparcial.VentanaDetalleController">
+   <content>
+      <VBox fx:id="mainVbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3000.0" prefWidth="1280.0" spacing="80.0" style="-fx-background-color: black;">
+         <children>
+            <HBox fx:id="buttonHbox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1280.0">
+               <children>
+                  <Button fx:id="backButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#regresarPrincipal" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #121212;" text="&lt;" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="botonCatalogo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cargarCatalogo" style="-fx-background-color: #121212;" text="Catálogo" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="botonExplorar" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cargarExplorar" style="-fx-background-color: #121212;" text="Explorar" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="textUsuario" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox fx:id="hboxModo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="70.0" style="-fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 5;">
+                     <children>
+                        <Button fx:id="botonLuz" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setLight" prefHeight="35.0" prefWidth="35.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="botonNoche" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setNight" prefHeight="35.0" prefWidth="35.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox fx:id="hboxModo1" alignment="CENTER" prefHeight="35.0" prefWidth="35.0">
+                     <children>
+                        <Button fx:id="botonSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#desloggear" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: red; -fx-background-radius: 24; -fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 3;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="130.0" top="3.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="hboxTitlePrice" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="gameTitle" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="1054.9364800453186">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="textPrice" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="194.13663578033447">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hboxGameImg" prefHeight="349.0" prefWidth="822.0" style="-fx-background-color: black;">
+               <children>
+                  <HBox fx:id="hboxImgSS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="886.0" style="-fx-background-color: black;" />
+                  <ScrollPane fx:id="scrollSS" prefHeight="446.0" prefWidth="726.0" style="-fx-border-color: black; -fx-background-color: black;">
+                     <content>
+                        <VBox fx:id="vboxSS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="272.0" spacing="10.0" style="-fx-background-color: black;" />
+                     </content>
+                     <HBox.margin>
+                        <Insets left="104.0" top="25.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+               </children>
+               <VBox.margin>
+                  <Insets top="-30.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox fx:id="vboxInfoGame" prefHeight="36.0" prefWidth="822.0" spacing="10.0">
+               <children>
+                  <Button fx:id="botonWishlist" alignment="CENTER" mnemonicParsing="false" onAction="#anadirWishlist" prefWidth="270.0" style="-fx-background-color: #34eb4c;" text="AGREGAR A WISHLIST" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="990.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <HBox fx:id="hboxGenero" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Text fx:id="textGen" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Género:">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textGameGen" fill="#8c8d8f" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxDev" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Text fx:id="textDev" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrolladora: ">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textGameDev" fill="#8c8d8f" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxAnio" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Text fx:id="textLanz" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Año de lanzamiento:">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textAnio" fill="#8c8d8f" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <Text fx:id="textDescripcionG" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción">
+                     <VBox.margin>
+                        <Insets left="5.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="textDescripcion" fill="#8c8d8f" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="826.936595916748">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children></VBox>
+            <VBox fx:id="vboxReviews" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+               <children>
+                  <Text fx:id="textReview" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reviews">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <HBox fx:id="hboxOrdenarReviews" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Text fx:id="textOrdenar" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar por: ">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="comboOrden" onAction="#filtro" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin></ComboBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Text fx:id="textDeja" strokeType="OUTSIDE" strokeWidth="0.0" text="Deja tu reseña">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <HBox fx:id="hboxEscribir" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <HBox fx:id="hboxRadios" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" text="1">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="valoracion" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="2" toggleGroup="$valoracion" />
+                                    <RadioButton mnemonicParsing="false" text="3" toggleGroup="$valoracion" />
+                                    <RadioButton mnemonicParsing="false" text="4" toggleGroup="$valoracion" />
+                                    <RadioButton mnemonicParsing="false" text="5" toggleGroup="$valoracion" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="botonEnviar" mnemonicParsing="false" onAction="#guardarResenia" text="Enviar" />
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="textAreaEscribe" prefHeight="200.0" prefWidth="200.0" promptText="Escribe un comentario..." style="-fx-max-width: 640;" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxOrderReviews" prefHeight="200.0" prefWidth="100.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

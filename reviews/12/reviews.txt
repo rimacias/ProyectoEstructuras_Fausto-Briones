@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+AVGlatina3;Ha perdido la esencia, los autos parecen de juguete;1;2022
+maxlakota;Pésimo diseño y jugabilidad, ni sombra de NFS MSW;2;2022

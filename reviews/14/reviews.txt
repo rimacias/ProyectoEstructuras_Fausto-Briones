@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+iTzNiiiCoX;Sin duda un juego bastante atrapante, muy bien logrado;5;2022
+nr20022007;Si bien el juego revive la experiencia de ser Spiderman, no es muy interesante más allá de lo esperable de un juego de héroes;3;2022

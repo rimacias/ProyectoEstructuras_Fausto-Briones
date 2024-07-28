@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+JosFer;Posee una trama bastante entretenida pero esperaba en realidad.;4;2022
+maxlakota;Sin duda uno de los mejores lanzamientos de este año.;5;2022

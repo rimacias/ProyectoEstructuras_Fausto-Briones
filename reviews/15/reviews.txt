@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+lacrackpro911;Creo que es uno de los juegos más desafiantes que he probado, he quedado sin palabras.;5;2013
+AVGlatina3;Me encanta la ambientación, las peleas contras los jefes y los personajes, además de que la historia se cuenta de manera implícita.;5;2015

@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+termo_de_agua;Muy aburrido el juego, le pongo 2 porque me gustó la música;2;2020
+albedo_God;Obra maestra 100/10;5;2020

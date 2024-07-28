@@ -1,0 +1,3 @@
+usuario;comentario;valoracion;anio
+AVGlatina3;Me encantó la personaje principal y la historia que gira en torno a ella;5;2018
+maxlakota;Una historia muy bien desarrollada pero el combate me parece muy simple;4;2017
